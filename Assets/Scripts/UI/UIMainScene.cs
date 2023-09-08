@@ -1,4 +1,5 @@
 using System;
+using System.IO;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -6,6 +7,7 @@ using UnityEngine.SceneManagement;
 
 public class UIMainScene : MonoBehaviour
 {
+
     public static UIMainScene Instance { get; private set; }
 
     public interface IUIInfoContent
@@ -78,3 +80,5 @@ public class UIMainScene : MonoBehaviour
         SceneManager.LoadScene(0);
     }
 }
+
+
